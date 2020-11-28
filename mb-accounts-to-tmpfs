@@ -5,5 +5,5 @@ mkdir -p  $HOME/solana/validator-ledger/accounts/; \
 chown -R root: $HOME/solana/ ; \
 echo "tmpfs $HOME/solana/validator-ledger/accounts tmpfs size=30000m 0 0" >> /etc/fstab; \
 mount -a; \
-systemctl start solana-mb.service; \
-journalctl -u solana-mb -f --no-hostname
+systemctl start solana.service; \
+journalctl -u solana -f --no-hostname
